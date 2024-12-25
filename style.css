@@ -440,3 +440,107 @@ footer {
     }
 }
 
+
+
+
+
+
+
+/* Chatbot Icon Container */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0a1931; /* Background color for the icon box */
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures the image doesn't spill out */
+}
+
+/* Chatbot Image */
+.chatbot-icon img {
+  width: 100%; /* Ensures the image fills the container */
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Maintains aspect ratio and fills the container */
+  border-radius: 50%; /* Ensures the image is circular to match the container */
+}
+
+/* Chatbot Interface */
+.chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  height: 400px; /* Set height to contain all messages */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot.hidden {
+  display: none;
+}
+
+.chatbot-header {
+  background-color: #0a1931;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto; /* Enable scrolling for messages */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #0a1931 #f4f4f9;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: #0a1931;
+  border-radius: 4px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.bot {
+  background-color: #f4f4f9;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #0a1931;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+#chatbot-input {
+  border: none;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+}
