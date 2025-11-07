@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paarth Doshi — Projects</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- LinkedIn -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body>
+
+  <!-- 🌍 Background Globe Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="videos/videoplayback.mp4" type="video/mp4" />
+
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a class="logo" href="home.html">Paarthfolio.</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="download-resume">Download Resume</button>
+    </div>
+  </nav>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">
+      A showcase of my work in analytics, data science, and automation — all synced live from GitHub.
+    </p>
+
+<!-- 🔍 FILTER BAR -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-lang="all">All</button>
+      <button class="filter-btn" data-lang="HTML">HTML</button>
+      <button class="filter-btn" data-lang="CSS">CSS</button>
+      <button class="filter-btn" data-lang="Java">Java</button>
+      <button class="filter-btn" data-lang="Python">Python</button>
+      <button class="filter-btn" data-lang="SQL">SQL</button>
+      <button class="filter-btn" data-lang="JavaScript">JavaScript</button>
+      <button class="filter-btn" data-lang="C">C</button>
+    </div>
+
+      <!-- PROJECTS GRID (auto-filled by JS) -->
+      <div class="projects-grid" id="projects-grid">
+      <p style="color:var(--muted)">Loading repositories...</p>
+    </div>
+  </div>
+</section>
+
+  <!-- FLOATING LINKEDIN CARD -->
+  <div class="linkedin-float">
+    <div class="badge-base LI-profile-badge"
+         data-locale="en_US"
+         data-size="medium"
+         data-theme="dark"
+         data-type="VERTICAL"
+         data-vanity="paarth-doshi"
+         data-version="v1">
+      <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/paarth-doshi/"></a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Paarth Parag Doshi. Built with passion and precision.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
