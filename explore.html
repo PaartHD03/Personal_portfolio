@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paarth Doshi — Explore</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- LinkedIn -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body>
+
+  <!-- 🌍 Background Globe Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="videos/videoplayback.mp4" type="video/mp4" />
+
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a class="logo" href="home.html">Paarthfolio.</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="explore.html" class="active">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="download-resume">Download Resume</button>
+    </div>
+  </nav>
+
+  <!-- BLOG SECTION -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Blog & Updates</h2>
+      <p class="section-sub">My latest insights, experiences, and thoughts on data, automation, and innovation.</p>
+
+      <div class="projects-grid" id="blog-grid">
+        <!-- Filled dynamically from script.js -->
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- VIDEOS GALLERY -->
+<section id="videos" class="section videos-gallery">
+  <div class="container">
+    <h2 class="section-title">Project Videos</h2>
+    <p class="section-sub">Short walkthroughs and highlights of my work.</p>
+
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <a href="https://www.youtube.com/watch?v=-EjZqjXgFj0" target="_blank" class="video-link">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/-EjZqjXgFj0/hqdefault.jpg" alt="Recruit CRM Project">
+          <div class="overlay">
+            <i class="fab fa-youtube"></i>
+            <span>Recruit CRM Project</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Video 2 -->
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-link">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Data Visualization Dashboard">
+          <div class="overlay">
+            <i class="fab fa-youtube"></i>
+            <span>Data Visualization Dashboard</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Video 3 -->
+      <a href="https://www.youtube.com/watch?v=3tmd-ClpJxA" target="_blank" class="video-link">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/3tmd-ClpJxA/hqdefault.jpg" alt="Selenium Automation Project">
+          <div class="overlay">
+            <i class="fab fa-youtube"></i>
+            <span>Selenium Automation</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Add more videos here easily -->
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- FLOATING LINKEDIN CARD -->
+  <div class="linkedin-float">
+    <div class="badge-base LI-profile-badge"
+         data-locale="en_US"
+         data-size="medium"
+         data-theme="dark"
+         data-type="VERTICAL"
+         data-vanity="paarth-doshi"
+         data-version="v1">
+      <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/paarth-doshi/"></a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Paarth Parag Doshi. Built with passion and precision.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
