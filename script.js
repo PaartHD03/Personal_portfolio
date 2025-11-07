@@ -176,15 +176,62 @@ filterButtons.forEach(btn => {
 
   /* Certifications Lift Scroll Animation */
   const certificates = [
-    { title: "Business Analytics", desc: "eDiploma", author: "Harvard Business School Online", img: "images/certificate4.jpg" },
-    { title: "Data Visualization (Tableau)", desc: "Dashboards & viz", author: "ETLHive", img: "images/certificate1.jpg" },
-    { title: "Power BI", desc: "Reporting & DAX", author: "ETLHive", img: "images/certificate1.jpg" },
-    { title: "Data Science", desc: "with Python", author: "ETLHive", img: "images/certificate3.jpg" },
-    { title: "Java Basics", desc: "Core Java", author: "Cognizant", img: "images/certificate1.jpg" },
-    { title: "Selenium Automation", desc: "UI automation", author: "Cognizant", img: "images/certificate1.jpg" },
-    { title: "SQL & Databases", desc: "SQL (Intermediate)", author: "Hacker Rank", img: "images/certificate2.jpg" },
-    { title: "Web Development", desc: "HTML/CSS/JS", author: "College", img: "images/certificate1.jpg" }
-  ];
+  { 
+    title: "Business Analytics", 
+    desc: "eDiploma", 
+    author: "Harvard Business School Online", 
+    img: "images/certificate4.jpg" 
+  },
+  { 
+    title: "Certified Data Scientist", 
+    desc: "Data Science with Python", 
+    author: "ETLHive", 
+    img: "images/certificate3.jpg" 
+  },
+  { 
+    title: "SQL (Advanced)", 
+    desc: "Advanced SQL Certification", 
+    author: "HackerRank", 
+    img: "images/certificate2.jpg" 
+  },
+  { 
+    title: "SQL (Intermediate)", 
+    desc: "SQL Query Skills", 
+    author: "HackerRank", 
+    img: "images/certificate2.jpg" 
+  },
+  { 
+    title: "Alteryx Foundational Micro-Credential", 
+    desc: "Analytics Automation", 
+    author: "Alteryx", 
+    img: "images/alteryx1.png" 
+  },
+  { 
+    title: "Build and Secure Networks in Google Cloud", 
+    desc: "Network Security", 
+    author: "Google Cloud", 
+    img: "images/googlecloud1.png" 
+  },
+  { 
+    title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud", 
+    desc: "AI & ML", 
+    author: "Google Cloud", 
+    img: "images/googlecloud2.png" 
+  },
+  { 
+    title: "CCNA: Introduction to Networks", 
+    desc: "Networking Fundamentals", 
+    author: "Cisco", 
+    img: "images/cisco1.png" 
+  },
+  { 
+    title: "Level 3: GenAI", 
+    desc: "API & GCP Integration", 
+    author: "Google Cloud", 
+    img: "images/googlecloud3.png" 
+  }
+];
+
 
   const leftList = document.getElementById('cert-left');
   const rightList = document.getElementById('cert-right');
@@ -273,3 +320,4 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
