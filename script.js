@@ -180,31 +180,31 @@ filterButtons.forEach(btn => {
     title: "Business Analytics", 
     desc: "eDiploma", 
     author: "Harvard Business School Online", 
-    img: "images/certificate4.jpg" 
+    img: "images/eDiploma.jpg" 
   },
   { 
     title: "Certified Data Scientist", 
     desc: "Data Science with Python", 
     author: "ETLHive", 
-    img: "images/certificate3.jpg" 
+    img: "images/ds-py.jpg" 
   },
   { 
     title: "SQL (Advanced)", 
     desc: "Advanced SQL Certification", 
     author: "HackerRank", 
-    img: "images/certificate2.jpg" 
+    img: "images/sql-inter.jpg" 
   },
   { 
     title: "SQL (Intermediate)", 
     desc: "SQL Query Skills", 
     author: "HackerRank", 
-    img: "images/certificate2.jpg" 
+    img: "images/sql-adv.jpg" 
   },
   { 
     title: "Alteryx Foundational Micro-Credential", 
     desc: "Analytics Automation", 
     author: "Alteryx", 
-    img: "images/alteryx1.png" 
+    img: "images/alteryx.png" 
   },
   { 
     title: "Build and Secure Networks in Google Cloud", 
@@ -320,4 +320,5 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
