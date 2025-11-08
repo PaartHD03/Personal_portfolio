@@ -222,7 +222,7 @@ filterButtons.forEach(btn => {
     title: "CCNA: Introduction to Networks", 
     desc: "Networking Fundamentals", 
     author: "Cisco", 
-    img: "images/cisco1.png" 
+    img: "images/cisco1.pdf" 
   },
   { 
     title: "Level 3: GenAI", 
@@ -320,6 +320,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
