@@ -216,7 +216,7 @@ filterButtons.forEach(btn => {
     title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud", 
     desc: "AI & ML", 
     author: "Google Cloud", 
-    img: "images/googlecloud2.png" 
+    img: "images/powerBI.jpg" 
   },
   { 
     title: "CCNA: Introduction to Networks", 
@@ -320,5 +320,6 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
