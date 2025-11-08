@@ -213,7 +213,7 @@ filterButtons.forEach(btn => {
     img: "images/googlecloud1.png" 
   },
   { 
-    title: "Perform Foundational Data, ML, and AI Tasks in Google Cloud", 
+    title: "Visualization with Power BI & Tableau", 
     desc: "AI & ML", 
     author: "Google Cloud", 
     img: "images/powerBI.jpg" 
@@ -222,7 +222,7 @@ filterButtons.forEach(btn => {
     title: "CCNA: Introduction to Networks", 
     desc: "Networking Fundamentals", 
     author: "Cisco", 
-    img: "images/cisco1.pdf" 
+    img: "images/cisco1.png" 
   },
   { 
     title: "Level 3: GenAI", 
@@ -311,6 +311,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
