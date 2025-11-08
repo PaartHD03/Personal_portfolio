@@ -253,8 +253,8 @@ filterButtons.forEach(btn => {
 function initCertLiftScroll() {
   if (!leftList || !rightList) return;
 
-  // base certificates
-  const certs = certificates.slice(0, 4);
+  // use all certificates instead of slicing
+  const certs = certificates;
 
   // populate both lanes
   certs.forEach(item => leftList.appendChild(buildCertCard(item)));
@@ -275,33 +275,24 @@ function initCertLiftScroll() {
   const rightSpeed = 0.1;
 
   function animate() {
-    // Move both
     leftY -= leftSpeed;  // move up
     rightY += rightSpeed; // move down
 
-    // Loop left (scrolls upward)
-    if (Math.abs(leftY) >= leftHeight) {
-      leftY = 0;
-    }
+    if (Math.abs(leftY) >= leftHeight) leftY = 0;
+    if (rightY >= 0) rightY = -rightHeight;
 
-    // Loop right (scrolls downward)
-    if (rightY >= 0) {
-      rightY = -rightHeight;
-    }
-
-    // Apply transforms
     leftList.style.transform = `translateY(${leftY}px)`;
     rightList.style.transform = `translateY(${rightY}px)`;
 
     requestAnimationFrame(animate);
   }
 
-  // Initialize right list starting offset at -height so it scrolls downward naturally
   rightList.style.transform = `translateY(${-rightHeight}px)`;
   rightY = -rightHeight;
 
   animate();
 }
+
 
 window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
 
@@ -320,6 +311,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
