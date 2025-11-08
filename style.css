@@ -340,26 +340,28 @@ body {
   height: 360px;
   background: #0e1a2b;
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .linkedin-float .badge-base {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   border-radius: 12px;
-}
-.linkedin-float:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 18px rgba(255,107,97,0.35);
+  overflow: hidden;
 }
 
-/* Responsive behavior */
+.linkedin-float:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(255, 107, 97, 0.35);
+}
+
+/* ✅ Responsive behavior */
 @media (max-width: 1024px) {
   .linkedin-float {
     width: 220px;
@@ -368,6 +370,7 @@ body {
     bottom: 30px;
   }
 }
+
 @media (max-width: 768px) {
   .linkedin-float {
     width: 200px;
@@ -376,13 +379,16 @@ body {
     bottom: 25px;
   }
 }
+
 @media (max-width: 600px) {
   .linkedin-float {
     position: fixed;
-    right: 10px;
+    right: 8px;
     bottom: 20px;
-    width: 180px;
-    height: 240px;
+    width: 160px;
+    height: 220px;
+    z-index: 1001;
+    display: flex; /* ✅ force visible */
   }
 }
 
@@ -496,4 +502,5 @@ body {
     font-size: 1.8rem;
   }
 }
+
 
