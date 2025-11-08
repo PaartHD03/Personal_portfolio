@@ -192,13 +192,13 @@ filterButtons.forEach(btn => {
     title: "SQL (Advanced)", 
     desc: "Advanced SQL Certification", 
     author: "HackerRank", 
-    img: "images/sql-inter.jpg" 
+    img: "images/sql-adv.jpg" 
   },
   { 
     title: "SQL (Intermediate)", 
     desc: "SQL Query Skills", 
     author: "HackerRank", 
-    img: "images/sql-adv.jpg" 
+    img: "images/sql-inter.jpg" 
   },
   { 
     title: "Alteryx Foundational Micro-Credential", 
@@ -320,6 +320,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
