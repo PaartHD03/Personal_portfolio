@@ -214,8 +214,8 @@ filterButtons.forEach(btn => {
   },
   { 
     title: "Visualization with Power BI & Tableau", 
-    desc: "AI & ML", 
-    author: "Google Cloud", 
+    desc: "Power BI & Online Tableau", 
+    author: "ETLHive", 
     img: "images/powerBI.jpg" 
   },
   { 
@@ -311,6 +311,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
