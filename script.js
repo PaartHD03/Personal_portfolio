@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img: "images/project2.jpg", 
     link: "https://tailoredweb.netlify.app/"
   },
-      { title: "Breast Cancer Analysis", desc: "EDA & dashboards", img: "images/breast.png" },
+      { title: "Healthcare Data Analysis and Visualization", desc: "SQL & dashboards", img: "images/healthcare_pbi.jpg" },
       
     ];
     manual.forEach((p, i) => {
@@ -311,6 +311,7 @@ window.addEventListener("load", () => setTimeout(initCertLiftScroll, 800));
     if (window.gsap) gsap.from(liFloat, { y: 30, opacity: 0, duration: 1, delay: 0.3 });
   }
 });
+
 
 
 
